@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Balancy Balls</title>
+</head>
+<style type="text/css">
+    body{
+        background-color: #20caff;
+        height: 100vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: 0;
+        overflow: hidden;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        border-bottom: 10px solid #fff;
+    }
+    ul li{
+        list-style-type: none;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #fff;
+        margin: 0 10px;
+
+        animation-name: myani;
+        animation-duration: 0.8s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes myani{
+        0%{
+            transform: translateY(0px);
+        }
+        50%{
+            transform: translateY(-150px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
+    }
+
+    ul li:nth-of-type(1){
+        animation-delay: 0.45s;
+    }
+    ul li:nth-of-type(2){
+        animation-delay: 0.6s;
+    }
+    ul li:nth-of-type(3){
+        animation-delay: 0.3s;
+    }
+    ul li:nth-of-type(4){
+        animation-delay: 0s;
+    }
+    ul li:nth-of-type(5){
+        animation-delay: 0.15s;
+    }
+</style>
+<body>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+</body>
+</html>
